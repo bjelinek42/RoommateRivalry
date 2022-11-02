@@ -6,3 +6,12 @@ Content-type: application/json
   "email": "ben@email.com",
   "password": "password"
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "ben@email.com",
+  "password": "password"
+}
