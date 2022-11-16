@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   
   post "/sessions" => "sessions#create"
   
+  post "/groups" => "groups#create"
 end
