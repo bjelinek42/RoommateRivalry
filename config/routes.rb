@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   post "/users" => "users#create"
+  patch "/users" => "users#update"
+  
   post "/sessions" => "sessions#create"
+  
 end
