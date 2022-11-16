@@ -9,5 +9,13 @@ class UsersController < ApplicationController
     end
   end
 
-  
+  def update
+    user = User.update_user(params)
+    if user.save
+      render json: { message: "User updated successfully" }, status: :accepted
+    else
+      render json: { errors: user.errors.full_messages }, status: :bad_request
+    end
+  end
+
 end

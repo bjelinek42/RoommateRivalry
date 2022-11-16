@@ -7,6 +7,15 @@ Content-type: application/json
   "password": "password"
 }
 
+###
+PATCH http://localhost:3000/users
+Content-type: application/json
+
+{
+  "id": 3,
+  "group_id": 1
+}
+
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
