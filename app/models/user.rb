@@ -2,6 +2,8 @@ class User < ApplicationRecord
   has_secure_password
   validates :email, presence: true, uniqueness: true
 
+  belongs_to :group
+
   def self.new_user(params)
     user = User.new(
       name: params[:name],
