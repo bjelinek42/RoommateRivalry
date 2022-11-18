@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   
   post "/sessions" => "sessions#create"
   
+  get "/groups/:id" => "groups#show"
   post "/groups" => "groups#create"
 
   post "/bets" => "bets#create"

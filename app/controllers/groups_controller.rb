@@ -1,5 +1,10 @@
 class GroupsController < ApplicationController
 
+  def show
+    group = Group.find_by(id: params[:id])
+    render json: group
+  end
+
   def create
     group = Group.new_group(params)
     if group.save

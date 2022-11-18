@@ -29,6 +29,10 @@ Content-Type: application/json
 }
 
 ###
+GET http://localhost:3000/groups/1
+Authorization: Bearer {{jwt}}
+
+###
 POST http://localhost:3000/groups.json
 Content-type: application/json
 
