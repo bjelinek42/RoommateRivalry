@@ -1,10 +1,13 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njg4OTA5MDZ9.iECTfGmnkoKEvQAPLaZjpoixw-Ptk-RVyyC2uRFAPhE
+
 POST http://localhost:3000/users
 Content-type: application/json
 
 {
   "name": "Howie",
   "email": "howie@email.com",
-  "password": "password"
+  "password": "password",
+  "group_id": 1
 }
 
 ###
@@ -35,11 +38,12 @@ Content-type: application/json
 
 ###
 POST http://localhost:3000/bets.json
+Authorization: Bearer {{jwt}}
 Content-type: application/json
 
 {
-  "title": "Golf",
-  "description": "Winner of round of golf",
+  "title": "Basketball",
+  "description": "First to 10",
   "wager_object": "Beer",
-  "wager_amount": 2
+  "wager_amount": 4
 }
