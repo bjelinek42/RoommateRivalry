@@ -32,3 +32,14 @@ Content-type: application/json
 {
   "name": "Snyder"
 }
+
+###
+POST http://localhost:3000/bets.json
+Content-type: application/json
+
+{
+  "title": "Golf",
+  "description": "Winner of round of golf",
+  "wager_object": "Beer",
+  "wager_amount": 2
+}
