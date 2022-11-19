@@ -1,5 +1,9 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njg4OTA5MDZ9.iECTfGmnkoKEvQAPLaZjpoixw-Ptk-RVyyC2uRFAPhE
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njg5Nzc0NzZ9.CXWJM6nM9nx6KxmO91JbzSQn25X7K-r68OtWToqvByU
 
+GET http://localhost:3000/users/1
+Authorization: Bearer {{jwt}}
+
+###
 POST http://localhost:3000/users
 Content-type: application/json
 
