@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Njg5Nzc0NzZ9.CXWJM6nM9nx6KxmO91JbzSQn25X7K-r68OtWToqvByU
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjkwNjU4NTF9.jtqxUlkYgG2tOj25xfajMW40SSUw2PWRQsmenqveIaM
 
 GET http://localhost:3000/users/1
 Authorization: Bearer {{jwt}}
