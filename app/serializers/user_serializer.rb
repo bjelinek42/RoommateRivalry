@@ -4,9 +4,10 @@ class UserSerializer < ActiveModel::Serializer
 
   def bets
     user_groups = UserGroup.where(user_id: current_user.id)
-    bets = []
+    bets = {}
     user_groups.each do |ug|
-      bets << Bet.where(group_id: ug.group_id)
+      group = Group.find_by(id: ug.group_id)
+      bets[group.name] = Bet.where(group_id: ug.group_id)
     end
     return bets
   end
